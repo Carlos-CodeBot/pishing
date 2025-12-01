@@ -1,0 +1,11 @@
+services:
+  parking-app:
+    build: .
+    container_name: parking-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - parking_data:/app/data
+    restart: unless-stopped
+volumes:
+  parking_data:
