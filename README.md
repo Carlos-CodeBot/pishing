@@ -20,6 +20,7 @@ Formulario de registro para parqueadero con un backend mínimo en Node.js que re
    ```bash
    docker compose up -d --build
    ```
+   - Asegúrate de que Docker Desktop o el daemon de Docker estén en ejecución antes de lanzar el comando (el error `open //./pipe/dockerDesktopLinuxEngine` indica que Docker no está levantado).
 2. Abre http://localhost:3000 para acceder al frontend y backend juntos.
 3. Los datos se guardan en un volumen nombrado `parking_data` (persistente entre reinicios).
 4. Para detener los servicios y conservar los datos:
